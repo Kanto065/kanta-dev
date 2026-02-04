@@ -14,7 +14,7 @@ const projects = [
 
 export default function Portfolio() {
     return (
-        <section className="container mx-auto px-6 py-20">
+        <section className="container mx-auto px-6 py-20 relative z-10">
             <div className="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div className="space-y-2">
                     <h2 className="text-sm font-bold tracking-widest text-gray-500 uppercase">

@@ -6,7 +6,7 @@ import { Mail, Loader2, Send } from "lucide-react";
 
 export default function Contact() {
     return (
-        <section className="container mx-auto px-6 py-20">
+        <section className="container mx-auto px-6 py-20 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 {/* Left: Info */}
                 <div className="space-y-6">

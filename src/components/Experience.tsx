@@ -27,7 +27,7 @@ const experience = [
 
 export default function Experience() {
     return (
-        <section className="container mx-auto px-6 py-20">
+        <section className="container mx-auto px-6 py-20 relative z-10">
             <div className="mb-12">
                 <h2 className="text-sm font-bold tracking-widest text-gray-500 uppercase mb-3">
                     Career Path

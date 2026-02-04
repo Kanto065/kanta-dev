@@ -14,7 +14,7 @@ const skills = [
 
 export default function Skills() {
     return (
-        <section className="container mx-auto px-6 py-20">
+        <section className="container mx-auto px-6 py-20 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left: Text Content */}
                 <motion.div
