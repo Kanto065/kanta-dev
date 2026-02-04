@@ -84,7 +84,7 @@ export default function Hero() {
                         </h1>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-400 text-sm md:text-base max-w-xl">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-400 text-base md:text-lg font-medium max-w-2xl">
                         <a href="mailto:kanto@example.com" className="flex items-center gap-3 hover:text-primary transition-colors group">
                             <div className="p-2 rounded-lg bg-white/5 group-hover:bg-primary/20 transition-colors">
                                 <Mail className="w-4 h-4 md:w-5 md:h-5 text-primary" />
@@ -97,7 +97,7 @@ export default function Hero() {
                             </div>
                             +880 18366 800 69
                         </a>
-                        <a href="https://www.linkedin.com/in/kanta-bhattacharjee/" className="flex items-center gap-3 hover:text-primary transition-colors group">
+                        <a href="https://www.linkedin.com/in/kanta-bhattacharjee/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary transition-colors group">
                             <div className="p-2 rounded-lg bg-white/5 group-hover:bg-primary/20 transition-colors">
                                 <Linkedin className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                             </div>

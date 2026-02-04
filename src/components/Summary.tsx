@@ -17,10 +17,13 @@ export default function Summary() {
 
                     <div className="space-y-6 text-gray-300 leading-relaxed text-lg">
                         <p>
-                            I am an experienced and detail-oriented UX/UI product designer dedicated to creating intuitive and impactful digital experiences. Over the years, I have honed my skills in user research, wireframing, prototyping, and visual design, always striving to balance user needs with business objectives.
+                            I’m a <span className="font-bold text-white">full-stack developer</span> who builds complete web applications—from intuitive user interfaces to reliable server-side systems. I focus on creating products that look clean, feel fast, and work consistently in real-world use.
                         </p>
                         <p>
-                            I have collaborated with diverse teams, including developers, marketers, and product managers, to bring concepts to life, ensuring seamless integration of design and functionality. My design philosophy centers on empathy and innovation.
+                            I enjoy shaping smooth user experiences just as much as designing the logic behind them. My work bridges the gap between frontend and backend, ensuring that interfaces are responsive, data flows are efficient, and systems remain easy to maintain as they grow.
+                        </p>
+                        <p>
+                            I work closely with clients and teams to turn ideas into <span className="font-bold text-white">production-ready solutions</span>, keeping performance, clarity, and usability at the center of every decision.
                         </p>
                     </div>
 
