@@ -6,10 +6,34 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 const projects = [
-    { id: 1, title: "Flowstate", category: "Web App", color: "from-blue-600 to-cyan-500" },
-    { id: 2, title: "Apex Template", category: "Design System", color: "from-orange-500 to-yellow-500" },
-    { id: 3, title: "Lumina", category: "SaaS Dashboard", color: "from-purple-600 to-pink-500" },
-    { id: 4, title: "Quantum", category: "AI Interface", color: "from-emerald-500 to-green-400" },
+    {
+        id: 1,
+        title: "FoodMonk",
+        category: "Restaurant Platform · Full-Stack + Mobile",
+        color: "from-orange-500 to-red-500",
+        href: "https://github.com/Kanto065/Restaurant_Management_System-",
+    },
+    {
+        id: 2,
+        title: "Facial Recognition Attendance",
+        category: "AI / Computer Vision",
+        color: "from-purple-600 to-pink-500",
+        href: "https://github.com/Kanto065/facial-recognition-attendance-mvp",
+    },
+    {
+        id: 3,
+        title: "Restaurant POS",
+        category: ".NET Desktop & Web POS",
+        color: "from-blue-600 to-cyan-500",
+        href: "https://github.com/Kanto065/Restaurant_POS",
+    },
+    {
+        id: 4,
+        title: "Takeout",
+        category: "Food Ordering Web App",
+        color: "from-emerald-500 to-green-400",
+        href: "https://takeout-two.vercel.app",
+    },
 ];
 
 export default function Portfolio() {
@@ -39,26 +63,28 @@ export default function Portfolio() {
                         viewport={{ once: true }}
                         className="group"
                     >
-                        <GlassCard className="h-[400px] relative p-0 border-white/5 bg-white/5 cursor-pointer hover:border-primary/50 transition-colors duration-500">
-                            {/* Background Gradient / Image Placeholder */}
-                            <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20 group-hover:opacity-30 transition-opacity duration-500`} />
+                        <a href={project.href} target="_blank" rel="noopener noreferrer">
+                            <GlassCard className="h-[400px] relative p-0 border-white/5 bg-white/5 cursor-pointer hover:border-primary/50 transition-colors duration-500">
+                                {/* Background Gradient / Image Placeholder */}
+                                <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20 group-hover:opacity-30 transition-opacity duration-500`} />
 
-                            {/* Content Overlay */}
-                            <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <span className="text-sm font-medium text-primary mb-2 block opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                                        {project.category}
-                                    </span>
-                                    <h4 className="text-3xl font-bold text-white mb-2">{project.title}</h4>
-                                    <div className="h-1 w-0 group-hover:w-full bg-primary transition-all duration-500" />
+                                {/* Content Overlay */}
+                                <div className="absolute inset-0 p-8 flex flex-col justify-end">
+                                    <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                        <span className="text-sm font-medium text-primary mb-2 block opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                            {project.category}
+                                        </span>
+                                        <h4 className="text-3xl font-bold text-white mb-2">{project.title}</h4>
+                                        <div className="h-1 w-0 group-hover:w-full bg-primary transition-all duration-500" />
+                                    </div>
                                 </div>
-                            </div>
 
-                            {/* Decorative Icon */}
-                            <div className="absolute top-6 right-6 p-4 rounded-full glass opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-50 group-hover:scale-100">
-                                <ArrowUpRight className="w-6 h-6 text-white" />
-                            </div>
-                        </GlassCard>
+                                {/* Decorative Icon */}
+                                <div className="absolute top-6 right-6 p-4 rounded-full glass opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-50 group-hover:scale-100">
+                                    <ArrowUpRight className="w-6 h-6 text-white" />
+                                </div>
+                            </GlassCard>
+                        </a>
                     </motion.div>
                 ))}
             </div>

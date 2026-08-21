@@ -6,22 +6,10 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experience = [
     {
-        company: "Tech Solutions Inc.",
-        role: "Senior Full Stack Dev",
-        period: "2021 - Present",
-        description: "Leading a team of 5 developers building high-performance SaaS applications.",
-    },
-    {
-        company: "Digital Agency",
-        role: "Frontend Developer",
-        period: "2019 - 2021",
-        description: "Developed award-winning marketing websites and e-commerce platforms.",
-    },
-    {
-        company: "Freelance",
-        role: "Web Designer",
-        period: "2017 - 2019",
-        description: "Worked with international clients to deliver custom web solutions.",
+        company: "E. B. Solutions Ltd.",
+        role: "Software Engineer",
+        period: "Feb 2025 - Present",
+        description: "Building full-stack products with C# / .NET Core, MongoDB, and MSSQL, with a growing focus on AI-driven development.",
     },
 ];
 

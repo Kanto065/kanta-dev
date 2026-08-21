@@ -2,14 +2,17 @@
 
 import { motion } from "framer-motion";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { IconType } from "react-icons";
+import { SiFigma, SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiFramer } from "react-icons/si";
 
-const skills = [
-    { name: "Figma", level: 95 },
-    { name: "React / Next.js", level: 90 },
-    { name: "TypeScript", level: 85 },
-    { name: "Tailwind CSS", level: 95 },
-    { name: "Node.js", level: 80 },
-    { name: "Framer Motion", level: 75 },
+const skills: { name: string; level: number; icon: IconType; color: string }[] = [
+    { name: "Figma", level: 95, icon: SiFigma, color: "#F24E1E" },
+    { name: "React", level: 90, icon: SiReact, color: "#61DAFB" },
+    { name: "Next.js", level: 90, icon: SiNextdotjs, color: "#FFFFFF" },
+    { name: "TypeScript", level: 85, icon: SiTypescript, color: "#3178C6" },
+    { name: "Tailwind CSS", level: 95, icon: SiTailwindcss, color: "#38BDF8" },
+    { name: "Node.js", level: 80, icon: SiNodedotjs, color: "#5FA04E" },
+    { name: "Framer Motion", level: 75, icon: SiFramer, color: "#FF0055" },
 ];
 
 export default function Skills() {
@@ -45,7 +48,13 @@ export default function Skills() {
                     {skills.map((skill, index) => (
                         <div key={skill.name} className="space-y-2">
                             <div className="flex justify-between items-end">
-                                <span className="text-white font-medium text-lg">{skill.name}</span>
+                                <span className="flex items-center gap-2.5 text-white font-medium text-lg">
+                                    <skill.icon
+                                        className="w-5 h-5 shrink-0"
+                                        style={{ color: skill.color }}
+                                    />
+                                    {skill.name}
+                                </span>
                                 <span className="text-gray-500 text-sm">{skill.level}%</span>
                             </div>
                             <GlassCard className="h-3 w-full bg-white/5 border-none rounded-full overflow-hidden">
